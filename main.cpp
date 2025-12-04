@@ -1,7 +1,7 @@
 #include <iostream>
 #include "LinkedList.h"
+#include "ThreeListIterator.h"
 
-using namespace std;
 
 int main() {
 
@@ -15,7 +15,7 @@ int main() {
 	list1->insert(15);
 	list1->insert(16);
 	list1->insert(35);
-	cout << "The linked list is: ";
+	std::cout << "The linked list 1 is: ";
 	list1->print(list1->getHead());
 
 
@@ -24,7 +24,7 @@ int main() {
 	list2->insert(7);
 	list2->insert(12);
 	list2->insert(63);
-	cout << "\nThe linked list 2 is: ";
+	std::cout << "\nThe linked list 2 is: ";
 	list2->print(list2->getHead());
 
 	//list3, values 10, 13, 14, 42
@@ -32,9 +32,18 @@ int main() {
 	list3->insert(13);
 	list3->insert(14);
 	list3->insert(42);
-	cout << "\nThe linked list 3 is: ";
+	std::cout << "\nThe linked list 3 is: ";
 	list3->print(list3->getHead());
+	std::cout << std::endl;
+	std::cout << std::endl;
 
+	ThreeListIterator iterator(list1, list2, list3);
+	
+	std::cout << "\getNext output: " << std::endl;
+
+	while (iterator.hasNext()) {
+		iterator.getNext();
+	}
 
 	delete list1;
 	delete list2;
@@ -42,5 +51,5 @@ int main() {
 
 
 
-	return 0;
+	return 1;
 }

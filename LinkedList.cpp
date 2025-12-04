@@ -1,10 +1,5 @@
 #include "LinkedList.h"
 
-struct LinkedList::Node {
-	int data;
-	Node* next;
-	Node(int val) : data(val), next(nullptr) {}
-};
 
 LinkedList::LinkedList() : head(nullptr) {}
 LinkedList::~LinkedList() {

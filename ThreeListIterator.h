@@ -11,9 +11,10 @@ public:
 
 	ThreeListIterator(LinkedList* l1, LinkedList* l2, LinkedList* l3)
 			: list1(l1), list2(l2), list3(l3) {}
-	void iterateAndPrint();
+	
 
-
+	bool hasNext();
+	void getNext();
 
 };
 

@@ -3,20 +3,33 @@
 #include <iostream>
 
 class LinkedList {
-	private:
-		struct Node;
-		Node* head;
 public:
+
+	struct Node {
+		int data;
+		Node* next;
+		Node(int val) : data(val), next(nullptr) {}
+	};
+
+
 	LinkedList();
 	~LinkedList();
 	Node* getHead();
-	//insert at end
-	void insert(int val);
-	void print(Node* node);
+	void setHead(Node*);
+	void insert(int);
+	void print(Node*);
+
+private:
+	Node* head;
+
 };
 
 inline LinkedList::Node* LinkedList::getHead() {
 	return head;
+}
+
+inline void LinkedList::setHead(Node* node) {
+	head = node;
 }
 
 #endif  //_LINKEDLIST_H_
