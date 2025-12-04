@@ -39,7 +39,7 @@ int main() {
 
 	ThreeListIterator iterator(list1, list2, list3);
 	
-	std::cout << "\getNext output: " << std::endl;
+	std::cout << "\Iterated output: " << std::endl;
 
 	while (iterator.hasNext()) {
 		iterator.getNext();
