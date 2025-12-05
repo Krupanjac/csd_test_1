@@ -15,7 +15,7 @@ public:
 
 	bool hasNext();
 	void getNext();
-
+	void executeAll();
 };
 
 

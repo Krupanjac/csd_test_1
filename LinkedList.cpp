@@ -26,8 +26,8 @@ void LinkedList::insert(int val) {
 	temp->next = newNode;
 }
 
-void LinkedList::print(Node* node) {
-	Node* temp = node;
+void LinkedList::print() {
+	Node* temp = this->head;
 	while (temp != nullptr) {
 		std::cout << temp->data << " ";
 		temp = temp->next;

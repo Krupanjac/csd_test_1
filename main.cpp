@@ -16,7 +16,7 @@ int main() {
 	list1->insert(16);
 	list1->insert(35);
 	std::cout << "The linked list 1 is: ";
-	list1->print(list1->getHead());
+	list1->print();
 
 
 	//list 2 , values 2,7,12,63
@@ -25,7 +25,7 @@ int main() {
 	list2->insert(12);
 	list2->insert(63);
 	std::cout << "\nThe linked list 2 is: ";
-	list2->print(list2->getHead());
+	list2->print();
 
 	//list3, values 10, 13, 14, 42
 	list3->insert(10);
@@ -33,17 +33,17 @@ int main() {
 	list3->insert(14);
 	list3->insert(42);
 	std::cout << "\nThe linked list 3 is: ";
-	list3->print(list3->getHead());
+	list3->print();
 	std::cout << std::endl;
 	std::cout << std::endl;
 
 	ThreeListIterator iterator(list1, list2, list3);
 	
-	std::cout << "\Iterated output: " << std::endl;
+	std::cout << "Iterated output: " << std::endl;
 
-	while (iterator.hasNext()) {
-		iterator.getNext();
-	}
+	iterator.executeAll();
+
+
 
 	delete list1;
 	delete list2;

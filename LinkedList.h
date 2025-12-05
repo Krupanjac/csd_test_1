@@ -17,7 +17,7 @@ public:
 	Node* getHead();
 	void setHead(Node*);
 	void insert(int);
-	void print(Node*);
+	void print();
 
 private:
 	Node* head;
