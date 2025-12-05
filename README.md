@@ -9,7 +9,7 @@ This project implements a Linked List traversal structure in C++. Entry test for
 - **LinkedList.h / LinkedList.cpp**: 
   - Defines the `LinkedList` class.
   - Manages a singly linked list of nodes.
-  - Contains a private `Node` structure.
+  - Contains a `Node` structure.
 
 - **ThreeListIterator.h / ThreeListIterator.cpp**:
   - Defines the `ThreeListIterator` class.
