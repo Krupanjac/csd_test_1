@@ -2,7 +2,7 @@
 
 ## Project Structure and Hierarchy
 
-This project implements a Linked List traversal structure in C++. Entry test for Cl1ient Side Developer C++ position.
+This project implements a Linked List traversal structure in C++. Entry test for Client Side Developer C++ position.
 
 ### File Hierarchy
 
